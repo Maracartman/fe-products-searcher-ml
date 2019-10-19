@@ -16,6 +16,7 @@
   "devDependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "husky": "^3.0.9",
     "node-sass": "^4.12.0",
     "pre-commit": "^1.2.2",
     "react-styleguidist": "9.0.4",
@@ -49,6 +50,12 @@
     "pre-commit": [
       "lint",
       "test"
-    ]
+    ],
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged",
+        "pre-push": "npm test"
+      }
+    }
   }
 }
