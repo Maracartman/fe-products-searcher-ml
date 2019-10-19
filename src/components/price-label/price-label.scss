@@ -1,0 +1,26 @@
+.presentational-price__container {
+    display: inline-flex;
+    p {
+        margin: 0;
+    }
+}
+
+
+
+p.price__label {
+    font-size: 24px;
+
+    &--increased {
+        font-size: 46px;
+    }
+
+    &--digits {
+        font-size: 10px;
+        margin-top: 7px;
+    }
+
+    &--digits--increased {
+        font-size: 15px;
+        margin-top: 14px;
+    }
+}

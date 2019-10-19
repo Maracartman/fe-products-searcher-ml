@@ -1,16 +1,26 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { SearchItem } from './search-item';
+import { Loading } from '../loading/loading';
+import './search-result.scss';
 import PropTypes from 'prop-types';
 
-export const SearchResult = props => {
-  let { id } = useParams();
-  console.log(getUrlParameter('q'));
-  return <div>SearchResult View</div>;
+export const SearchResult = ({ searchResult, searchAndShowProduct }) => (
+  <React.Fragment>
+    {searchResult && (
+      <div>
+        {searchResult.items.map((item, index) => (
+          <div key={`search-item_${index}`}>
+            <SearchItem {...item} index={index} searchAndShowProduct={searchAndShowProduct}/>
+          </div>
+        ))}
+      </div>
+    )}
+    {!searchResult && <Loading />}
+  </React.Fragment>
+);
+
+SearchResult.propTypes = {
+  searchResult: PropTypes.object
 };
 
- const getUrlParameter = (name) => {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    let regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    let results = regex.exec(window.location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-  };
+export default SearchResult;
