@@ -1,0 +1,88 @@
+// Search Item styles
+@import '../../variables.scss';
+
+.search-item_picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+
+.city__container {
+    padding-top: 15px;
+}
+
+// Extra Small devices (landscape phones, 0px and up)
+@media (max-width: 575px) {
+    .search-item_picture {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .hide--xs {
+        display: none;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+    .search-item_picture {
+        width: 90px;
+        height: 90px;
+    }
+    .hide--sm {
+        display: none;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991px) {
+    .search-item_picture {
+        width: 110px;
+        height: 110px;
+    }
+    .hide--md {
+        display: none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .search-item_picture {
+        width: 180px;
+        height: 180px;
+    }
+    .hide--lg {
+        display: none;
+    }
+}
+
+
+.upstairs-container_border {
+    margin-left: 15px;
+    display: block;
+    width: 98%;
+    border-top: 1px solid $brandcleargray;
+}
+
+.search-item_container {
+    cursor: pointer;
+    min-height: 212px;
+    padding: 16px 16px;
+
+    .col-md-8.col-8 {
+        padding: 0 0 0 16px;
+    }
+}
+
+.search-item-img_container {
+    margin-left: 16px;
+    padding: 0;
+}
+
+.item--free-shipping_container {
+    display: inline-flex;
+    margin-left: 3px
+}
+
+.price--free-shipping__container {
+    margin-bottom: 32px;
+}
