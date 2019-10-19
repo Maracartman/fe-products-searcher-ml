@@ -38,7 +38,7 @@ export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
           className={'product-information__container'}
         >
           <Row>
-            <Col md={12} lg={8} xs={12} sm={12}>
+            <Col md={12} lg={8} xs={12} sm={12} className={'product__picture--container'}>
               <img
                 className={'product__picture'}
                 src={selectedProduct.picture}
