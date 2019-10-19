@@ -5,20 +5,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { PriceLabel } from '../price-label/price-label';
-import { useParams } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import './product-details.scss';
 import PropTypes from 'prop-types';
 
-export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
-  const { id } = useParams();
-  let history = useHistory();
-  useEffect(() => {
-    if (!selectedProduct) {
-      searchAndShowProduct(id, history);
-    } else {
-    }
-  }, []);
+export const StateLessProductDetails = ({ selectedProduct }) => {
   const doPriceContainsDot = amount => amount.toString().includes('.');
   const formatAmount = price => {
     const currencyFormat = new Intl.NumberFormat('de-DE');
@@ -38,7 +29,13 @@ export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
           className={'product-information__container'}
         >
           <Row>
-            <Col md={12} lg={8} xs={12} sm={12} className={'product__picture--container'}>
+            <Col
+              md={12}
+              lg={8}
+              xs={12}
+              sm={12}
+              className={'product__picture--container'}
+            >
               <img
                 className={'product__picture'}
                 src={selectedProduct.picture}
@@ -90,6 +87,17 @@ export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
       )}
     </React.Fragment>
   );
+};
+export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
+  const { id } = useParams();
+  let history = useHistory();
+  useEffect(() => {
+    if (!selectedProduct) {
+      searchAndShowProduct(id, history);
+    } else {
+    }
+  }, []);
+  return <StateLessProductDetails selectedProduct={selectedProduct} />;
 };
 
 ProductDetails.propTypes = {
