@@ -14,14 +14,20 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "node-sass": "^4.12.0",
+    "pre-commit": "^1.2.2",
     "react-styleguidist": "9.0.4",
+    "react-test-renderer": "^16.10.2",
     "webpack": "4.41.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "npm run test --watch",
+    "lint": "eslint src",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
@@ -39,6 +45,10 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ],
+    "pre-commit": [
+      "lint",
+      "test"
     ]
   }
 }
