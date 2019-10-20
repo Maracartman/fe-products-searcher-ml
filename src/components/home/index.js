@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 export const Home = ({ resetSearch }) => {
   useEffect(() => {
