@@ -32,10 +32,15 @@ export const StateLessProductDetails = ({ selectedProduct }) => {
         >
           <Helmet>
             <title>
-              MercadoLibre Searcher - Detalles de articulo{' '}
+              MercadoLibre Searcher - Detalles del articulo{' '}
               {selectedProduct.title}
             </title>
-            <meta name="description" content={selectedProduct.description} />
+            <meta
+              name="description"
+              content={
+                'Página para visualizar los detalles completos del articulo consultado con opción de comprar'
+              }
+            />
           </Helmet>
           <Row>
             <Col
