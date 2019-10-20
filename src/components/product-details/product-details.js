@@ -88,12 +88,12 @@ export const StateLessProductDetails = ({ selectedProduct }) => {
             </Col>
           </Row>
           <Row className={'descriptions__container--title'}>
-            <Col>
+            <Col md={12} xs={12}>
               <h2>Descripción del producto</h2>
             </Col>
           </Row>
           <Row className={'descriptions__container--info'}>
-            <Col>
+            <Col lg={9} xs={12}>
               <h3>{selectedProduct.description}</h3>
             </Col>
           </Row>
