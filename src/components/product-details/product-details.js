@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import  Helmet  from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useParams, useHistory } from 'react-router-dom';
 import './product-details.scss';
 import PropTypes from 'prop-types';
