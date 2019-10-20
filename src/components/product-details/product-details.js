@@ -1,10 +1,10 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint no-alert: 0 */
 /* eslint no-restricted-properties: 0 */
 import React, { useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import  Helmet  from 'react-helmet';
 import { useParams, useHistory } from 'react-router-dom';
 import './product-details.scss';
 import PropTypes from 'prop-types';
@@ -30,6 +30,13 @@ export const StateLessProductDetails = ({ selectedProduct }) => {
           id={'product_information'}
           className={'product-information__container'}
         >
+          <Helmet>
+            <title>
+              MercadoLibre Searcher - Detalles de articulo{' '}
+              {selectedProduct.title}
+            </title>
+            <meta name="description" content={selectedProduct.description} />
+          </Helmet>
           <Row>
             <Col
               md={12}

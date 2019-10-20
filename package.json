@@ -10,12 +10,12 @@
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "babel7-jest": "^1.0.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
@@ -25,20 +25,14 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "7.12.4",
-    "eslint-plugin-sonarjs": "^0.3.0",
     "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
-    "jest-junit": "^8.0.0",
-    "jest-sonar-reporter": "^2.0.0",
     "lint-staged": "8.1.5",
     "node-sass": "^4.12.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
-    "react-styleguidist": "9.0.4",
+    "react-helmet": "^5.2.1",
     "react-test-renderer": "^16.10.2",
-    "sonar-scanner": "^3.1.0",
-    "sonarqube-scanner": "2.4.0",
-    "sonarqube-scanner-node": "0.0.10",
     "webpack": "4.41.0"
   },
   "scripts": {
@@ -89,9 +83,6 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/fileMock.js",
       "\\.(css|scss|less)$": "identity-obj-proxy"
-    },
-    "transform": {
-      "^.+\\.(js|jsx)?$": "babel7-jest"
     }
   }
 }
