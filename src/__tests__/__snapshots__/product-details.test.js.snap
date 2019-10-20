@@ -249,9 +249,12 @@ Gracias por su comprensión. Esperamos su oferta.
       <div
         className="descriptions__container--title row"
       >
-        <Col>
+        <Col
+          md={12}
+          xs={12}
+        >
           <div
-            className="col"
+            className="col-md-12 col-12"
           >
             <h2>
               Descripción del producto
@@ -267,9 +270,12 @@ Gracias por su comprensión. Esperamos su oferta.
       <div
         className="descriptions__container--info row"
       >
-        <Col>
+        <Col
+          lg={9}
+          xs={12}
+        >
           <div
-            className="col"
+            className="col-lg-9 col-12"
           >
             <h3>
               Cachorros Golden Retriever 100% Puros. (Machos y Hembras disponibles). Somos MercadoLideres con medalla ganada por nuestro desempeño. Siempre se entregan desde que cumplen sus 45 días, con su primera desparasitación, primera vacuna, libreta sellada por profesionales veterinarios, padres libres de displacía.
