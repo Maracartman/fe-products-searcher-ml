@@ -1,2 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: http://mlsearchercl-env.nmuainwjcf.us-west-1.elasticbeanstalk.com/sitemap.xml
 User-agent: *
