@@ -16,6 +16,8 @@
   "devDependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "5.16.0",
+    "lint-staged": "8.1.5",
     "husky": "^3.0.9",
     "node-sass": "^4.12.0",
     "pre-commit": "^1.2.2",
@@ -29,6 +31,7 @@
     "test": "react-scripts test",
     "test:watch": "npm run test --watch",
     "lint": "eslint src",
+    "precommit": "lint-staged",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
@@ -46,16 +49,23 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "pre-commit": [
-      "lint",
-      "test"
-    ],
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged",
-        "pre-push": "npm test"
-      }
+    ]
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --trailing-comma es5 --single-quote --write",
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
