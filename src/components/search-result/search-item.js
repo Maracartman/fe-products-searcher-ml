@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,7 +18,7 @@ export const SearchItem = ({
   index,
   searchAndShowProduct
 }) => {
-  let history = useHistory();
+  const history = useHistory();
   const productClickEventHandler = id => {
     searchAndShowProduct(id, history);
   };

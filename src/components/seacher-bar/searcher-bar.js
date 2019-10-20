@@ -1,17 +1,18 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import MlLogo from '../../assets/Logo_ML.png';
-import SearchIcon from '../../assets/ic_Search.png';
 import './searcher-bar.scss';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import SearchIcon from '../../assets/ic_Search.png';
+import MlLogo from '../../assets/Logo_ML.png';
 
 export const SearchBar = ({ searchQuery, setSearchQuery, resetSearch }) => {
-  let history = useHistory();
+  const history = useHistory();
   const [typedValue, setTypedValue] = useState(searchQuery || '');
 
   const searchClickEvent = query => {

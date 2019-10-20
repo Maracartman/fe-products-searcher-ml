@@ -1,3 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loading test suite Should loading match Snapshot 1`] = `ShallowWrapper {}`;
+exports[`Loading test suite Should loading match Snapshot 1`] = `
+<ForwardRef
+  noGutters={false}
+>
+  <Col
+    className="spinner__container"
+  >
+    <Spinner
+      animation="border"
+      role="status"
+      variant="warning"
+    />
+  </Col>
+</ForwardRef>
+`;

@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriceLabel test suite Should loading match Snapshot 1`] = `ShallowWrapper {}`;
+exports[`PriceLabel test suite Should loading match Snapshot 1`] = `
+<div
+  className="presentational-price__container"
+>
+  <p
+    className="price__label"
+    key="key-test"
+    role="presentation"
+  >
+    15.000
+  </p>
+</div>
+`;

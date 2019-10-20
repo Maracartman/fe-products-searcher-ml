@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import './App.scss';
+import Container from 'react-bootstrap/Container';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { SearchBar } from './components/seacher-bar/searcher-bar';
 import { BreadCrumb } from './components/bread-crumb/bread-crumb';
 import { Home } from './components/home';
 import { Loading } from './components/loading/loading';
-import Container from 'react-bootstrap/Container';
 import { searchByQuery, searchProductById } from './services/api';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ProductDetails = React.lazy(() =>
@@ -24,11 +24,28 @@ const ComponentLoadingFacade = (Component, props) => () => (
   </React.Suspense>
 );
 
+const getUrlParameter = name => {
+  const name2 = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+  const regex = new RegExp(`[\\?&]${name2}=([^&#]*)`);
+  const results = regex.exec(window.location.search);
+  return results === null
+    ? ''
+    : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 const App = () => {
   const [searchQuery, setSearchQuery] = useState(null);
   const [categories, setCategories] = useState(null);
   const [searchResult, setSearchResult] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const resetSearch = history => {
+    setCategories(null);
+    setSearchResult(null);
+    setSearchQuery(null);
+    if (history) history.push('/');
+    window.history.pushState(null, window.document.title, window.location.href);
+  };
 
   const getProductsByQuerySearch = async history => {
     setCategories(null);
@@ -58,14 +75,6 @@ const App = () => {
     }
   };
 
-  const resetSearch = history => {
-    setCategories(null);
-    setSearchResult(null);
-    setSearchQuery(null);
-    if (history) history.push('/');
-    window.history.pushState(null, window.document.title, window.location.href);
-  };
-
   useEffect(() => {
     getProductsByQuerySearch();
   }, [searchQuery]);
@@ -75,8 +84,8 @@ const App = () => {
       <Router>
         <SearchBar
           {...{
-            searchQuery: searchQuery,
-            setSearchQuery: setSearchQuery,
+            searchQuery,
+            setSearchQuery,
             resetSearch
           }}
         />
@@ -91,18 +100,18 @@ const App = () => {
                   searchResult,
                   searchAndShowProduct
                 })}
-              ></Route>
+              />
               <Route
                 path="/items/:id"
                 component={ComponentLoadingFacade(ProductDetails, {
                   selectedProduct,
                   searchAndShowProduct
                 })}
-              ></Route>
+              />
               <Route exact path="/">
                 <Home
                   {...{
-                    resetSearch: resetSearch
+                    resetSearch
                   }}
                 />
               </Route>
@@ -112,15 +121,6 @@ const App = () => {
       </Router>
     </React.Fragment>
   );
-};
-
-const getUrlParameter = name => {
-  name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
-  let regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-  let results = regex.exec(window.location.search);
-  return results === null
-    ? ''
-    : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
 export default App;

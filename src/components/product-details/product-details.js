@@ -1,13 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint no-alert: 0 */
+/* eslint no-restricted-properties: 0 */
 import React, { useEffect } from 'react';
-import { Loading } from '../loading/loading';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { PriceLabel } from '../price-label/price-label';
 import { useParams, useHistory } from 'react-router-dom';
 import './product-details.scss';
 import PropTypes from 'prop-types';
+import { PriceLabel } from '../price-label/price-label';
+import { Loading } from '../loading/loading';
 
 export const StateLessProductDetails = ({ selectedProduct }) => {
   const doPriceContainsDot = amount => amount.toString().includes('.');
@@ -90,11 +92,10 @@ export const StateLessProductDetails = ({ selectedProduct }) => {
 };
 export const ProductDetails = ({ selectedProduct, searchAndShowProduct }) => {
   const { id } = useParams();
-  let history = useHistory();
+  const history = useHistory();
   useEffect(() => {
     if (!selectedProduct) {
       searchAndShowProduct(id, history);
-    } else {
     }
   }, []);
   return <StateLessProductDetails selectedProduct={selectedProduct} />;

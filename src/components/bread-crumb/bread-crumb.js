@@ -1,3 +1,4 @@
+/* eslint react/no-unescaped-entities: 0 */
 import React from 'react';
 import './bread-crumb.scss';
 import PropTypes from 'prop-types';

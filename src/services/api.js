@@ -8,10 +8,7 @@ const instance = Axios.create({
   }
 });
 
-export const searchByQuery = async query => {
-  return instance.get(`/items?q=${encodeURIComponent(query)}`);
-};
+export const searchByQuery = async query =>
+  instance.get(`/items?q=${encodeURIComponent(query)}`);
 
-export const searchProductById = async id => {
-  return instance.get(`/items/${id}`);
-};
+export const searchProductById = async id => instance.get(`/items/${id}`);

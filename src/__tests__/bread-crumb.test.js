@@ -1,6 +1,6 @@
 import React from 'react';
-import { BreadCrumb } from '../components/bread-crumb/bread-crumb';
 import { shallow } from 'enzyme';
+import { BreadCrumb } from '../components/bread-crumb/bread-crumb';
 
 describe('BreadCrumb test suite', () => {
   const categories = ['Test1', 'Test2', 'Test3'];
@@ -18,7 +18,7 @@ describe('BreadCrumb test suite', () => {
     ).toEqual(true);
   });
 
-   it('Expect BreadCrumb to not render expected text', () => {
+  it('Expect BreadCrumb to not render expected text', () => {
     const component = shallow(<BreadCrumb />);
     expect(
       component.contains(

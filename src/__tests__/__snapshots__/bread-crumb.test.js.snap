@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BreadCrumb test suite Should not render anything without categories passes 1`] = `ShallowWrapper {}`;
+exports[`BreadCrumb test suite Should not render anything without categories passes 1`] = `
+<Fragment>
+  <div
+    className="bread-crumb__container"
+  >
+    <p>
+      Test1 &gt; Test2
+       &gt;
+       
+      <b>
+        Test3
+      </b>
+    </p>
+  </div>
+</Fragment>
+`;

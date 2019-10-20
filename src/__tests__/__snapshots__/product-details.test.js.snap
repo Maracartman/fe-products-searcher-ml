@@ -1,3 +1,285 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductDetails test suite Should StateLessProductDetails component match the snapshot 1`] = `ReactWrapper {}`;
+exports[`ProductDetails test suite Should StateLessProductDetails component match the snapshot 1`] = `
+<StateLessProductDetails
+  searchAndShowProduct={[MockFunction]}
+  selectedProduct={
+    Object {
+      "categories": Array [
+        "Animales y Mascotas",
+        "Perros",
+        "Perros de Raza",
+      ],
+      "condition": "Nuevo",
+      "description": "Cachorros Golden Retriever 100% Puros. (Machos y Hembras disponibles). Somos MercadoLideres con medalla ganada por nuestro desempeño. Siempre se entregan desde que cumplen sus 45 días, con su primera desparasitación, primera vacuna, libreta sellada por profesionales veterinarios, padres libres de displacía.
+
+
+Somos la publicación NUMERO 1 DEL PAÍS. NOS ELIGEN POR NUESTRA SERIEDAD, NO SE ARRIESGUE CON VENDEDORES QUE NO LE INSPIRAN ABSOLUTA CONFIANZA.
+
+
+Con su compra le entregamos un Kit de bienvenida consistente en:
+-Un paquete del alimento premium con que se lo alimenta.
+-Correa.
+-Plato comedero.
+-Una pelota de tenis (¡Su juguete predilecto!)
+
+Son los Golden Retriever más puros que hay. 
+Esta es la raza perfecta para acompañar a niños, son realmente hermosos como se ve en las fotos. 
+
+Están en perfectas condiciones sanitarias y de higiene, muy buen porte, padre y madre 100% Golden Retriever puros. 
+La mejor raza para acompañar a los niños. Super cariñosos. 
+Alimentados con el mejor alimento premium del mercado. 
+
+
+Sabemos todo sobre cachorros. Afortunadamente la gente nos elige porque sabe que nuestros cachorros se crían en un ambiente campestre junto a sus papas y hermanitos. Esto influye notablemente en su carácter. NO SOMOS PET SHOP. Con nosotros usted tendrá la tranquilidad y seguridad de contar con nuestra asistencia ante cualquier tipo de inquietud para que su cachorro llegue a ser un excelente ejemplar, sano y feliz.
+
+Todos nuestros cachorros se entregan desparasitados a los 20 días con Levamisol / aprax, y a los 40 días con Total Full CG / Aprax durante tres días consecutivos. Están vacunados contra Parvovirus, Moquillo, Parainfluenza, Distemper, Adenovirus y Tos de las perreras. 
+
+ENTREGAMOS EL KIT DE BIENVENIDA MAS COMPLETO DEL MERCADO.
+
+¡VEA NUESTRA TRAYECTORIA! 
+¡CLIENTES SIEMPRE CONTENTOS!
+NO DUDE EN CONSULTAR, RESPONDEMOS RAPIDO.
+
+
+MUY IMPORTANTE: SOMOS MERCADOLIDERES, ORGULLOSAMENTE LOS UNICOS EN EL RUBRO EN CONSEGUIR QUE MERCADOLIBRE NOS PREMIE CON LA MEDALLA QUE DISTINGUE A LOS MEJORES VENDEDORES DEL SITIO. EN LA RAZA GOLDEN RETRIEVER HASTA EL MOMENTO NADIE POSEE ESTA MEDALLA DE MERCADOLIDERES QUE NOS ENORGULLECE, ESTO LO CONSEGUIMOS POR NUESTRA SERIEDAD, COMPROMISO Y RESPONSABILIDAD EN LA CRIANZA Y CUIDADO DE CADA UNO DE NUESTROS HERMOSOS CACHORROS.
+
+Siempre se entregan desde los 45 días, en ocasiones la entrega es INMEDIATA y en otras hay que esperar algunos días, somos primeros en ventas de todo el país (vea la posición de nuestras publicaciones y nuestra reputación única en todo el sitio) y dejamos en claro que serán borradas las preguntas que insinúen impaciencia, desconfianza, o se hable de nuestros cachorros como objetos. Nosotros elegimos a nuestros clientes, así como ustedes nos eligen, entiéndase que son nuestros cachorros los que se llevan, los criamos con todo el amor y nos esforzamos por que lleguen a hogares donde abunde la calidez y calidad humana.
+
+
+Condiciones de entrega / Medidas de seguridad / Contacto
+
+Aclaramos que a fin de evitar inconvenientes no aceptamos ofertas de usuarios con reputación negativa.
+
+Por otra parte, se deja en claro que se retiran en la zona de La Plata en un punto a coordinar con el comprador. Estamos dentro de un barrio cerrado y no damos la posibilidad de que quien oferte retire en nuestro domicilio porque no nos está permitido. 
+
+El contacto luego de la compra se establece únicamente por el canal de mensajes de MercadoLibre, respondemos rápido y de esta forma toda la negociación queda registrada por escrito para garantizar una absoluta transparencia y evitar malentendidos.
+
+
+Gracias por su comprensión. Esperamos su oferta.
+
+
+.",
+      "free_shipping": false,
+      "id": "MLA662503052",
+      "picture": "https://mla-s1-p.mlstatic.com/702622-MLA25627077107_052017-O.jpg",
+      "price": Object {
+        "amount": 15999,
+        "currency": "ARS",
+        "currency_symbol": "$",
+        "decimals": 2,
+      },
+      "sold_quantity": 150,
+      "title": "Cachorros Golden Retriever Maxima Pureza + Kit De Bienvenida",
+    }
+  }
+>
+  <div
+    className="product-information__container"
+    id="product_information"
+  >
+    <ForwardRef
+      noGutters={false}
+    >
+      <div
+        className="row"
+      >
+        <Col
+          className="product__picture--container"
+          lg={8}
+          md={12}
+          sm={12}
+          xs={12}
+        >
+          <div
+            className="product__picture--container col-lg-8 col-md-12 col-sm-12 col-12"
+          >
+            <img
+              alt="Foto producto"
+              className="product__picture"
+              src="https://mla-s1-p.mlstatic.com/702622-MLA25627077107_052017-O.jpg"
+            />
+          </div>
+        </Col>
+        <Col>
+          <div
+            className="col"
+          >
+            <ForwardRef
+              className="product-status__container"
+              noGutters={false}
+            >
+              <div
+                className="product-status__container row"
+              >
+                <p>
+                  Nuevo - 150 vendidos
+                </p>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              className="title__container"
+              noGutters={false}
+            >
+              <div
+                className="title__container row"
+              >
+                <h2>
+                  Cachorros Golden Retriever Maxima Pureza + Kit De Bienvenida
+                </h2>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              className="price__container"
+              noGutters={false}
+            >
+              <div
+                className="price__container row"
+              >
+                <PriceLabel
+                  float=""
+                  increaseSize={true}
+                  keyId="product-details--price"
+                  showFloating={true}
+                >
+                  <div
+                    className="presentational-price__container"
+                  >
+                    <p
+                      className="price__label--increased"
+                      key="product-details--price"
+                      role="presentation"
+                    >
+                      $ 159.99
+                    </p>
+                    <p
+                      className="price__label--digits--increased"
+                      key="product-details--price--float"
+                      role="presentation"
+                    />
+                  </div>
+                </PriceLabel>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              className="button__container"
+              noGutters={false}
+            >
+              <div
+                className="button__container row"
+              >
+                <Col>
+                  <div
+                    className="col"
+                  >
+                    <Button
+                      active={false}
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                      variant="primary"
+                    >
+                      <button
+                        className="btn btn-primary"
+                        disabled={false}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        Comprar
+                      </button>
+                    </Button>
+                  </div>
+                </Col>
+              </div>
+            </ForwardRef>
+          </div>
+        </Col>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      className="descriptions__container--title"
+      noGutters={false}
+    >
+      <div
+        className="descriptions__container--title row"
+      >
+        <Col>
+          <div
+            className="col"
+          >
+            <h2>
+              Descripción del producto
+            </h2>
+          </div>
+        </Col>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      className="descriptions__container--info"
+      noGutters={false}
+    >
+      <div
+        className="descriptions__container--info row"
+      >
+        <Col>
+          <div
+            className="col"
+          >
+            <h3>
+              Cachorros Golden Retriever 100% Puros. (Machos y Hembras disponibles). Somos MercadoLideres con medalla ganada por nuestro desempeño. Siempre se entregan desde que cumplen sus 45 días, con su primera desparasitación, primera vacuna, libreta sellada por profesionales veterinarios, padres libres de displacía.
+
+
+Somos la publicación NUMERO 1 DEL PAÍS. NOS ELIGEN POR NUESTRA SERIEDAD, NO SE ARRIESGUE CON VENDEDORES QUE NO LE INSPIRAN ABSOLUTA CONFIANZA.
+
+
+Con su compra le entregamos un Kit de bienvenida consistente en:
+-Un paquete del alimento premium con que se lo alimenta.
+-Correa.
+-Plato comedero.
+-Una pelota de tenis (¡Su juguete predilecto!)
+
+Son los Golden Retriever más puros que hay. 
+Esta es la raza perfecta para acompañar a niños, son realmente hermosos como se ve en las fotos. 
+
+Están en perfectas condiciones sanitarias y de higiene, muy buen porte, padre y madre 100% Golden Retriever puros. 
+La mejor raza para acompañar a los niños. Super cariñosos. 
+Alimentados con el mejor alimento premium del mercado. 
+
+
+Sabemos todo sobre cachorros. Afortunadamente la gente nos elige porque sabe que nuestros cachorros se crían en un ambiente campestre junto a sus papas y hermanitos. Esto influye notablemente en su carácter. NO SOMOS PET SHOP. Con nosotros usted tendrá la tranquilidad y seguridad de contar con nuestra asistencia ante cualquier tipo de inquietud para que su cachorro llegue a ser un excelente ejemplar, sano y feliz.
+
+Todos nuestros cachorros se entregan desparasitados a los 20 días con Levamisol / aprax, y a los 40 días con Total Full CG / Aprax durante tres días consecutivos. Están vacunados contra Parvovirus, Moquillo, Parainfluenza, Distemper, Adenovirus y Tos de las perreras. 
+
+ENTREGAMOS EL KIT DE BIENVENIDA MAS COMPLETO DEL MERCADO.
+
+¡VEA NUESTRA TRAYECTORIA! 
+¡CLIENTES SIEMPRE CONTENTOS!
+NO DUDE EN CONSULTAR, RESPONDEMOS RAPIDO.
+
+
+MUY IMPORTANTE: SOMOS MERCADOLIDERES, ORGULLOSAMENTE LOS UNICOS EN EL RUBRO EN CONSEGUIR QUE MERCADOLIBRE NOS PREMIE CON LA MEDALLA QUE DISTINGUE A LOS MEJORES VENDEDORES DEL SITIO. EN LA RAZA GOLDEN RETRIEVER HASTA EL MOMENTO NADIE POSEE ESTA MEDALLA DE MERCADOLIDERES QUE NOS ENORGULLECE, ESTO LO CONSEGUIMOS POR NUESTRA SERIEDAD, COMPROMISO Y RESPONSABILIDAD EN LA CRIANZA Y CUIDADO DE CADA UNO DE NUESTROS HERMOSOS CACHORROS.
+
+Siempre se entregan desde los 45 días, en ocasiones la entrega es INMEDIATA y en otras hay que esperar algunos días, somos primeros en ventas de todo el país (vea la posición de nuestras publicaciones y nuestra reputación única en todo el sitio) y dejamos en claro que serán borradas las preguntas que insinúen impaciencia, desconfianza, o se hable de nuestros cachorros como objetos. Nosotros elegimos a nuestros clientes, así como ustedes nos eligen, entiéndase que son nuestros cachorros los que se llevan, los criamos con todo el amor y nos esforzamos por que lleguen a hogares donde abunde la calidez y calidad humana.
+
+
+Condiciones de entrega / Medidas de seguridad / Contacto
+
+Aclaramos que a fin de evitar inconvenientes no aceptamos ofertas de usuarios con reputación negativa.
+
+Por otra parte, se deja en claro que se retiran en la zona de La Plata en un punto a coordinar con el comprador. Estamos dentro de un barrio cerrado y no damos la posibilidad de que quien oferte retire en nuestro domicilio porque no nos está permitido. 
+
+El contacto luego de la compra se establece únicamente por el canal de mensajes de MercadoLibre, respondemos rápido y de esta forma toda la negociación queda registrada por escrito para garantizar una absoluta transparencia y evitar malentendidos.
+
+
+Gracias por su comprensión. Esperamos su oferta.
+
+
+.
+            </h3>
+          </div>
+        </Col>
+      </div>
+    </ForwardRef>
+  </div>
+</StateLessProductDetails>
+`;
