@@ -30,7 +30,7 @@ export const SearchResult = ({ searchResult, searchAndShowProduct }) => (
     {searchResult && (
       <div>
         {searchResult.items.map((item, index) => (
-          <div key={`search-item`}>
+          <div key={`search-item-${index + 1}`}>
             <SearchItem
               {...item}
               index={index}

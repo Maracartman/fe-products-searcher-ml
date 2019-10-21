@@ -12,14 +12,9 @@ import { PriceLabel } from '../price-label/price-label';
 import { Loading } from '../loading/loading';
 
 export const StateLessProductDetails = ({ selectedProduct }) => {
-  const doPriceContainsDot = amount => amount.toString().includes('.');
   const formatAmount = price => {
     const currencyFormat = new Intl.NumberFormat('de-DE');
-    const formatedAmount = currencyFormat.format(
-      doPriceContainsDot(price.amount)
-        ? price.amount
-        : price.amount * Math.pow(10, -price.decimals)
-    );
+    const formatedAmount = currencyFormat.format(price.amount);
     return formatedAmount.split(',');
   };
   return (
@@ -66,7 +61,7 @@ export const StateLessProductDetails = ({ selectedProduct }) => {
               <Row className={'price__container'}>
                 <PriceLabel
                   keyId={'product-details--price'}
-                  float={formatAmount(selectedProduct.price)[1]}
+                  float={formatAmount(selectedProduct.price)[1] || null}
                   increaseSize
                   showFloating
                 >

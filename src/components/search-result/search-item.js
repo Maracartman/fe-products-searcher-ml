@@ -22,14 +22,9 @@ export const SearchItem = ({
   const productClickEventHandler = id => {
     searchAndShowProduct(id, history);
   };
-  const doPriceContainsDot = amount => amount.toString().includes('.');
   const formatAmount = price => {
     const currencyFormat = new Intl.NumberFormat('de-DE');
-    const formatedAmount = currencyFormat.format(
-      doPriceContainsDot(price.amount)
-        ? price.amount
-        : price.amount * Math.pow(10, -price.decimals)
-    );
+    const formatedAmount = currencyFormat.format(price.amount);
     return formatedAmount.split(',');
   };
   return (
@@ -49,10 +44,7 @@ export const SearchItem = ({
         <Col md={8} xs={8}>
           <Row>
             <Col md={12} className={'price--free-shipping__container'}>
-              <PriceLabel
-                keyId={`search-item-price-${id}`}
-                float={formatAmount(price)[1]}
-              >
+              <PriceLabel keyId={`search-item-price-${id}`}>
                 {`${price.currency_symbol} ${formatAmount(price)[0]}`}
               </PriceLabel>
               <div className={'item--free-shipping_container'}>
