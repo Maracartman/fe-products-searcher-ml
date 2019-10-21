@@ -183,7 +183,7 @@ Gracias por su comprensión. Esperamos su oferta.
                 className="price__container row"
               >
                 <PriceLabel
-                  float=""
+                  float="999"
                   increaseSize={true}
                   keyId="product-details--price"
                   showFloating={true}
@@ -196,13 +196,15 @@ Gracias por su comprensión. Esperamos su oferta.
                       key="product-details--price"
                       role="presentation"
                     >
-                      $ 159.99
+                      $ 15
                     </p>
                     <p
                       className="price__label--digits--increased"
                       key="product-details--price--float"
                       role="presentation"
-                    />
+                    >
+                      999
+                    </p>
                   </div>
                 </PriceLabel>
               </div>
